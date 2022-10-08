@@ -22,6 +22,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 10000;
 }
 
 #header .logo {
@@ -58,45 +59,82 @@ body {
 section {
     position: relative;
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-section #text{
+section::before{
+    content: '';
     position: absolute;
-    color: #094b65;
-    font-size: 10vw;
-    text-align: center;
-    line-height: 0.55em;
-    font-family: 'Amatic SC', cursive;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #094b65, transparent);
+    z-index: 10
+}
+
+section img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
 }
 
 section #text span {
     font-size: 0.20em;
     letter-spacing: 2px;
     font-weight: 500;
+    text-align: center;
 }
+section #text{
+    position: absolute;
+    font-weight: 900;
+    color: #094b65;
+    font-size: 10vw;
+    text-align: center;
+    line-height: 0.05em;
+    font-family: 'Amatic SC', cursive;
+    margin-top: -250px;
+    z-index: 10000;
+}
+
+
 
 #btn
 {  
     text-decoration: none;
-    min-height: 4vh;
-    margin-top: 400px;
     display: inline-block;
     padding: 8px 30px;
-    background: rgb(123, 199, 100);
+    background: #fff;
     color: #094b65;
     font-size: 1.2em;
     font-weight: 500;
     letter-spacing: 2px;
     border-radius: 40px;
+    transform: translatey(300%);
     
 }
+
 
 .sec {
     position: relative;
     padding: 100px;
     background: #094b65;
+}
+
+.sec h2 {
+    font-size: 3.5em;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.sec p {
+    font-size: 1.5em;
+    color: #fff;
 }

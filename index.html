@@ -18,8 +18,14 @@
         </ul>
     </header>
     <section>
-        <h2 id="text"><span>It's time for a new</span><br>Adventure</h2>
+        <h2 id="text">Looters<span><br>It's time for a new adventure.</span></h2>
+        <img src="img/bird1.png" id="bird1" style="margin-top: 70px; z-index: 1000;">
+        <img src="img/bird2.png" id="bird2" style="margin-top: 80px; margin-left: -100px; z-index: 1000;">
+        <img src="img/Mountains.png" id="mountains" style="margin-top: 200px;">
+        <img src="img/forest.png" id="forest" style="margin-top: 80px;">
         <a href="#" id="btn">Download Now</a>
+        <img src="img/rocks.png" id="rocks">
+        <img src="img/water.png" id="water">
     </section>
     <div class="sec">
         <h2>App description/hook</h2>
@@ -34,7 +40,72 @@
             molestiae delectus officiis dolores eos explicabo quibusdam vel!
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque beatae 
             voluptatibus sunt necessitatibus maiores minima magnam iure assumenda ipsa at! Enim nihil 
+            molestiae delectus officiis dolores eos explicabo quibusdam vel!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque beatae 
+            voluptatibus sunt necessitatibus maiores minima magnam iure assumenda ipsa at! Enim nihil 
+            molestiae delectus officiis dolores eos explicabo quibusdam vel!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque beatae 
+            voluptatibus sunt necessitatibus maiores minima magnam iure assumenda ipsa at! Enim nihil 
+            molestiae delectus officiis dolores eos explicabo quibusdam vel!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque beatae 
+            voluptatibus sunt necessitatibus maiores minima magnam iure assumenda ipsa at! Enim nihil 
+            molestiae delectus officiis dolores eos explicabo quibusdam vel!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque beatae 
+            voluptatibus sunt necessitatibus maiores minima magnam iure assumenda ipsa at! Enim nihil 
+            molestiae delectus officiis dolores eos explicabo quibusdam vel!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque beatae 
+            voluptatibus sunt necessitatibus maiores minima magnam iure assumenda ipsa at! Enim nihil 
+            molestiae delectus officiis dolores eos explicabo quibusdam vel!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque beatae 
+            voluptatibus sunt necessitatibus maiores minima magnam iure assumenda ipsa at! Enim nihil 
+            molestiae delectus officiis dolores eos explicabo quibusdam vel!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque beatae 
+            voluptatibus sunt necessitatibus maiores minima magnam iure assumenda ipsa at! Enim nihil 
+            molestiae delectus officiis dolores eos explicabo quibusdam vel!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque beatae 
+            voluptatibus sunt necessitatibus maiores minima magnam iure assumenda ipsa at! Enim nihil 
+            molestiae delectus officiis dolores eos explicabo quibusdam vel!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque beatae 
+            voluptatibus sunt necessitatibus maiores minima magnam iure assumenda ipsa at! Enim nihil 
+            molestiae delectus officiis dolores eos explicabo quibusdam vel!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque beatae 
+            voluptatibus sunt necessitatibus maiores minima magnam iure assumenda ipsa at! Enim nihil 
+            molestiae delectus officiis dolores eos explicabo quibusdam vel!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque beatae 
+            voluptatibus sunt necessitatibus maiores minima magnam iure assumenda ipsa at! Enim nihil 
+            molestiae delectus officiis dolores eos explicabo quibusdam vel!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque beatae 
+            voluptatibus sunt necessitatibus maiores minima magnam iure assumenda ipsa at! Enim nihil 
             molestiae delectus officiis dolores eos explicabo quibusdam vel!</p>
     </div>
+
+    <script>
+        let text = document.getElementById('text');
+        let bird1 = document.getElementById('bird1');
+        let bird2 = document.getElementById('bird2');
+        let btn = document.getElementById('btn');
+        let rocks = document.getElementById('rocks');
+        let mountains = document.getElementById('mountains');
+        let forest = document.getElementById('forest');
+        let water = document.getElementById('water');
+        let header = document.getElementById('header');
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+
+            text.style.top = 50 + value * -0.1 + '%';
+            bird1.style.top = value * -1 + 'px';
+            bird1.style.left = value * 2 + 'px';
+            bird2.style.top = value * -1 + 'px';
+            bird2.style.left = value * -2 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+            rocks.style.top = value * -0.15 + 'px';
+            header.style.top = value * 0.5 + 'px';
+            mountains.style.top = value * -0.2 + 'px';
+            forest.style.top = value * 0.55 + 'px';
+            header.style.top = value * 0.5 + 'px';
+            
+        })
+    </script>
 </body>
 </html>
