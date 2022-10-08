@@ -18,7 +18,8 @@
         </ul>
     </header>
     <section>
-        <h2 id="text">Looters<span><br>It's time for a new adventure.</span></h2>
+        <h2 id="text">Looters</h2>
+        <h2 id="text2"><span>It's time for a new adventure.</span></h2>
         <img src="img/bird1.png" id="bird1" style="margin-top: 70px; z-index: 1000;">
         <img src="img/bird2.png" id="bird2" style="margin-top: 80px; margin-left: -100px; z-index: 1000;">
         <img src="img/Mountains.png" id="mountains" style="margin-top: 200px;">
@@ -81,6 +82,7 @@
 
     <script>
         let text = document.getElementById('text');
+        let text2 = document.getElementById('text2');
         let bird1 = document.getElementById('bird1');
         let bird2 = document.getElementById('bird2');
         let btn = document.getElementById('btn');
@@ -92,8 +94,8 @@
 
         window.addEventListener('scroll', function(){
             let value = window.scrollY;
-
             text.style.top = 50 + value * -0.1 + '%';
+            text2.style.top = 50 + value * -0.1 + '%';
             bird1.style.top = value * -1 + 'px';
             bird1.style.left = value * 2 + 'px';
             bird2.style.top = value * -1 + 'px';
